@@ -72,6 +72,22 @@ def foo3(x, y, z):
 
 #makes a function with 3 variables and if x>y then x and y will switch 
 # if y>z and then y and z will switch 
+def foo4(x):
+	result = 1
+	for i in range(1, x + 1):
+		result = result * i
+    return result
+
+#makes a function with variable x then there is a loop from 1 to x+1
+# then i is in a loop and is multiplied by the result 
+# then next loop the value i is multiplied by the new result 
+
+def foo5(x):
+    if x == 1:
+       return 1
+return x * foo5(x - 1)
+
+#function returns 1 if x=1 then it'll take varible x and multiply by the result of foo5 with the varible
 
 
 
